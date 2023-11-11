@@ -5,7 +5,7 @@ function DisplayTask() {
   const getData = async () => {
     try {
       //To fetch the data from the server
-      const resp = await fetch("http://localhost:5000/get");
+      const resp = await fetch("https://todo-np-be.onrender.com/get");
       //Converting the values to json format
       const data = await resp.json();
       setTask(data);
