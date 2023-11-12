@@ -8,7 +8,7 @@ function AddTask({ getData }) {
     console.log({ items });
     try {
       //Fetching the api to add the values to the server POST method
-      const resp = await fetch("http://localhost:5000/add", {
+      const resp = await fetch("https://todo-np-be.onrender.com/add", {
         method: "POST",
         body: JSON.stringify({ items }),
         headers: { "content-type": "application/json" },
